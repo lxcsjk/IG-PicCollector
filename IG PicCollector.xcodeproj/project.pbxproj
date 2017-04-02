@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30225D7F5E19EF6E30920418 /* libPods-IG PicCollector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4828A56C5E79120A19190E12 /* libPods-IG PicCollector.a */; };
+		7F933402194EBAECAA0C3CB0 /* libPods-IG PicCollectorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 080585D88872B426ACAA94A1 /* libPods-IG PicCollectorTests.a */; };
+		E14837D01E91865300E26251 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E14837CF1E91865300E26251 /* main.m */; };
+		E14837D91E91865300E26251 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14837D71E91865300E26251 /* Main.storyboard */; };
+		E14837DE1E91865300E26251 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E14837DC1E91865300E26251 /* LaunchScreen.storyboard */; };
+		E14837E91E91865300E26251 /* IG_PicCollectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E14837E81E91865300E26251 /* IG_PicCollectorTests.m */; };
+		E14837F41E91865300E26251 /* IG_PicCollectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E14837F31E91865300E26251 /* IG_PicCollectorUITests.m */; };
+		E14838941E91870D00E26251 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E148388F1E91870D00E26251 /* SegmentViewController.m */; };
+		E14838951E91870D00E26251 /* UntreatedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14838911E91870D00E26251 /* UntreatedViewController.m */; };
+		E14838961E91870D00E26251 /* CompletedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14838931E91870D00E26251 /* CompletedViewController.m */; };
+		E148389D1E91871300E26251 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = E14838981E91871300E26251 /* MBProgressHUD+Add.m */; };
+		E148389E1E91871300E26251 /* Config.m in Sources */ = {isa = PBXBuildFile; fileRef = E148389A1E91871300E26251 /* Config.m */; };
+		E148389F1E91871300E26251 /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = E148389C1E91871300E26251 /* Util.m */; };
+		E14838B11E91873200E26251 /* XHSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = E14838AC1E91873200E26251 /* XHSegmentControl.m */; };
+		E14838B21E91873200E26251 /* XHSegmentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E14838AE1E91873200E26251 /* XHSegmentItem.m */; };
+		E14838B31E91873200E26251 /* XHSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E14838B01E91873200E26251 /* XHSegmentViewController.m */; };
+		E14838B61E91875700E26251 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E14838B51E91875700E26251 /* AppDelegate.m */; };
+		E14838B81E91880800E26251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E14838B71E91880800E26251 /* Assets.xcassets */; };
+		FB4A2E363D2E27B9CA904EC9 /* libPods-IG PicCollectorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23DF7CBE6C882BEBE741859A /* libPods-IG PicCollectorUITests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E14837E51E91865300E26251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E14837C31E91865200E26251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E14837CA1E91865300E26251;
+			remoteInfo = "IG PicCollector";
+		};
+		E14837F01E91865300E26251 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E14837C31E91865200E26251 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E14837CA1E91865300E26251;
+			remoteInfo = "IG PicCollector";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		080585D88872B426ACAA94A1 /* libPods-IG PicCollectorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IG PicCollectorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		23DF7CBE6C882BEBE741859A /* libPods-IG PicCollectorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IG PicCollectorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E255E30171ACFE73B95B5 /* Pods-IG PicCollector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IG PicCollector.release.xcconfig"; path = "Pods/Target Support Files/Pods-IG PicCollector/Pods-IG PicCollector.release.xcconfig"; sourceTree = "<group>"; };
+		4828A56C5E79120A19190E12 /* libPods-IG PicCollector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IG PicCollector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C951369EE2AC858D6301CAC /* Pods-IG PicCollectorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IG PicCollectorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IG PicCollectorTests/Pods-IG PicCollectorTests.release.xcconfig"; sourceTree = "<group>"; };
+		98C33C5F55B1FEA66DB91214 /* Pods-IG PicCollectorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IG PicCollectorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IG PicCollectorTests/Pods-IG PicCollectorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A348AD464A6FC97D18867048 /* Pods-IG PicCollectorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IG PicCollectorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IG PicCollectorUITests/Pods-IG PicCollectorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B14215E1E701807C19A7FC6E /* Pods-IG PicCollectorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IG PicCollectorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IG PicCollectorUITests/Pods-IG PicCollectorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7069277C602E0E1C0878BD9 /* Pods-IG PicCollector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IG PicCollector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IG PicCollector/Pods-IG PicCollector.debug.xcconfig"; sourceTree = "<group>"; };
+		E14837CB1E91865300E26251 /* IG PicCollector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IG PicCollector.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14837CF1E91865300E26251 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E14837D81E91865300E26251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E14837DD1E91865300E26251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E14837DF1E91865300E26251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E14837E41E91865300E26251 /* IG PicCollectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IG PicCollectorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14837E81E91865300E26251 /* IG_PicCollectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IG_PicCollectorTests.m; sourceTree = "<group>"; };
+		E14837EA1E91865300E26251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E14837EF1E91865300E26251 /* IG PicCollectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IG PicCollectorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E14837F31E91865300E26251 /* IG_PicCollectorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IG_PicCollectorUITests.m; sourceTree = "<group>"; };
+		E14837F51E91865300E26251 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E148388E1E91870D00E26251 /* SegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
+		E148388F1E91870D00E26251 /* SegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
+		E14838901E91870D00E26251 /* UntreatedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UntreatedViewController.h; sourceTree = "<group>"; };
+		E14838911E91870D00E26251 /* UntreatedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UntreatedViewController.m; sourceTree = "<group>"; };
+		E14838921E91870D00E26251 /* CompletedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompletedViewController.h; sourceTree = "<group>"; };
+		E14838931E91870D00E26251 /* CompletedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompletedViewController.m; sourceTree = "<group>"; };
+		E14838971E91871300E26251 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		E14838981E91871300E26251 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		E14838991E91871300E26251 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Config.h; sourceTree = "<group>"; };
+		E148389A1E91871300E26251 /* Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Config.m; sourceTree = "<group>"; };
+		E148389B1E91871300E26251 /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		E148389C1E91871300E26251 /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		E14838AB1E91873200E26251 /* XHSegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentControl.h; sourceTree = "<group>"; };
+		E14838AC1E91873200E26251 /* XHSegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentControl.m; sourceTree = "<group>"; };
+		E14838AD1E91873200E26251 /* XHSegmentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentItem.h; sourceTree = "<group>"; };
+		E14838AE1E91873200E26251 /* XHSegmentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentItem.m; sourceTree = "<group>"; };
+		E14838AF1E91873200E26251 /* XHSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHSegmentViewController.h; sourceTree = "<group>"; };
+		E14838B01E91873200E26251 /* XHSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHSegmentViewController.m; sourceTree = "<group>"; };
+		E14838B41E91875700E26251 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E14838B51E91875700E26251 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E14838B71E91880800E26251 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E14837C81E91865300E26251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30225D7F5E19EF6E30920418 /* libPods-IG PicCollector.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14837E11E91865300E26251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F933402194EBAECAA0C3CB0 /* libPods-IG PicCollectorTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14837EC1E91865300E26251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB4A2E363D2E27B9CA904EC9 /* libPods-IG PicCollectorUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		241E262C5AB6DEB8ACF2436E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4828A56C5E79120A19190E12 /* libPods-IG PicCollector.a */,
+				080585D88872B426ACAA94A1 /* libPods-IG PicCollectorTests.a */,
+				23DF7CBE6C882BEBE741859A /* libPods-IG PicCollectorUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F0BD7FB70B422E8AD4DCC8B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7069277C602E0E1C0878BD9 /* Pods-IG PicCollector.debug.xcconfig */,
+				3E4E255E30171ACFE73B95B5 /* Pods-IG PicCollector.release.xcconfig */,
+				98C33C5F55B1FEA66DB91214 /* Pods-IG PicCollectorTests.debug.xcconfig */,
+				8C951369EE2AC858D6301CAC /* Pods-IG PicCollectorTests.release.xcconfig */,
+				B14215E1E701807C19A7FC6E /* Pods-IG PicCollectorUITests.debug.xcconfig */,
+				A348AD464A6FC97D18867048 /* Pods-IG PicCollectorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E14837C21E91865200E26251 = {
+			isa = PBXGroup;
+			children = (
+				E14837CD1E91865300E26251 /* IG PicCollector */,
+				E14837E71E91865300E26251 /* IG PicCollectorTests */,
+				E14837F21E91865300E26251 /* IG PicCollectorUITests */,
+				E14837CC1E91865300E26251 /* Products */,
+				5F0BD7FB70B422E8AD4DCC8B /* Pods */,
+				241E262C5AB6DEB8ACF2436E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E14837CC1E91865300E26251 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E14837CB1E91865300E26251 /* IG PicCollector.app */,
+				E14837E41E91865300E26251 /* IG PicCollectorTests.xctest */,
+				E14837EF1E91865300E26251 /* IG PicCollectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E14837CD1E91865300E26251 /* IG PicCollector */ = {
+			isa = PBXGroup;
+			children = (
+				E14838B41E91875700E26251 /* AppDelegate.h */,
+				E14838B51E91875700E26251 /* AppDelegate.m */,
+				E148388D1E9186FD00E26251 /* Classes */,
+				E148388C1E9186F800E26251 /* Util */,
+				E148388B1E9186F400E26251 /* Lib */,
+				E14837D71E91865300E26251 /* Main.storyboard */,
+				E14838B71E91880800E26251 /* Assets.xcassets */,
+				E14837DC1E91865300E26251 /* LaunchScreen.storyboard */,
+				E14837DF1E91865300E26251 /* Info.plist */,
+				E14837CE1E91865300E26251 /* Supporting Files */,
+			);
+			path = "IG PicCollector";
+			sourceTree = "<group>";
+		};
+		E14837CE1E91865300E26251 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E14837CF1E91865300E26251 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E14837E71E91865300E26251 /* IG PicCollectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				E14837E81E91865300E26251 /* IG_PicCollectorTests.m */,
+				E14837EA1E91865300E26251 /* Info.plist */,
+			);
+			path = "IG PicCollectorTests";
+			sourceTree = "<group>";
+		};
+		E14837F21E91865300E26251 /* IG PicCollectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E14837F31E91865300E26251 /* IG_PicCollectorUITests.m */,
+				E14837F51E91865300E26251 /* Info.plist */,
+			);
+			path = "IG PicCollectorUITests";
+			sourceTree = "<group>";
+		};
+		E148388B1E9186F400E26251 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				E14838AA1E91873200E26251 /* XHSegmentController */,
+			);
+			name = Lib;
+			sourceTree = "<group>";
+		};
+		E148388C1E9186F800E26251 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				E14838971E91871300E26251 /* MBProgressHUD+Add.h */,
+				E14838981E91871300E26251 /* MBProgressHUD+Add.m */,
+				E14838991E91871300E26251 /* Config.h */,
+				E148389A1E91871300E26251 /* Config.m */,
+				E148389B1E91871300E26251 /* Util.h */,
+				E148389C1E91871300E26251 /* Util.m */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		E148388D1E9186FD00E26251 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E148388E1E91870D00E26251 /* SegmentViewController.h */,
+				E148388F1E91870D00E26251 /* SegmentViewController.m */,
+				E14838901E91870D00E26251 /* UntreatedViewController.h */,
+				E14838911E91870D00E26251 /* UntreatedViewController.m */,
+				E14838921E91870D00E26251 /* CompletedViewController.h */,
+				E14838931E91870D00E26251 /* CompletedViewController.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		E14838AA1E91873200E26251 /* XHSegmentController */ = {
+			isa = PBXGroup;
+			children = (
+				E14838AB1E91873200E26251 /* XHSegmentControl.h */,
+				E14838AC1E91873200E26251 /* XHSegmentControl.m */,
+				E14838AD1E91873200E26251 /* XHSegmentItem.h */,
+				E14838AE1E91873200E26251 /* XHSegmentItem.m */,
+				E14838AF1E91873200E26251 /* XHSegmentViewController.h */,
+				E14838B01E91873200E26251 /* XHSegmentViewController.m */,
+			);
+			path = XHSegmentController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E14837CA1E91865300E26251 /* IG PicCollector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14837F81E91865300E26251 /* Build configuration list for PBXNativeTarget "IG PicCollector" */;
+			buildPhases = (
+				9F8DBBF5AA86E460E611793D /* [CP] Check Pods Manifest.lock */,
+				E14837C71E91865300E26251 /* Sources */,
+				E14837C81E91865300E26251 /* Frameworks */,
+				E14837C91E91865300E26251 /* Resources */,
+				7AD5968447DC836133D95119 /* [CP] Embed Pods Frameworks */,
+				7526A868366ECBED653E44C6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "IG PicCollector";
+			productName = "IG PicCollector";
+			productReference = E14837CB1E91865300E26251 /* IG PicCollector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E14837E31E91865300E26251 /* IG PicCollectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14837FB1E91865300E26251 /* Build configuration list for PBXNativeTarget "IG PicCollectorTests" */;
+			buildPhases = (
+				96A7FFCD9182762AA507D250 /* [CP] Check Pods Manifest.lock */,
+				E14837E01E91865300E26251 /* Sources */,
+				E14837E11E91865300E26251 /* Frameworks */,
+				E14837E21E91865300E26251 /* Resources */,
+				37FB332CAA88612E6EA88A54 /* [CP] Embed Pods Frameworks */,
+				2C5AEF007E4DB49684E551CD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E14837E61E91865300E26251 /* PBXTargetDependency */,
+			);
+			name = "IG PicCollectorTests";
+			productName = "IG PicCollectorTests";
+			productReference = E14837E41E91865300E26251 /* IG PicCollectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E14837EE1E91865300E26251 /* IG PicCollectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14837FE1E91865300E26251 /* Build configuration list for PBXNativeTarget "IG PicCollectorUITests" */;
+			buildPhases = (
+				9843645DC96419FA8BE3A7FB /* [CP] Check Pods Manifest.lock */,
+				E14837EB1E91865300E26251 /* Sources */,
+				E14837EC1E91865300E26251 /* Frameworks */,
+				E14837ED1E91865300E26251 /* Resources */,
+				A45BD610A19AC124AD77582A /* [CP] Embed Pods Frameworks */,
+				9B1FDEC6676935CAE31D567B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E14837F11E91865300E26251 /* PBXTargetDependency */,
+			);
+			name = "IG PicCollectorUITests";
+			productName = "IG PicCollectorUITests";
+			productReference = E14837EF1E91865300E26251 /* IG PicCollectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E14837C31E91865200E26251 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = LXC;
+				TargetAttributes = {
+					E14837CA1E91865300E26251 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = EN5JPBLS84;
+						ProvisioningStyle = Automatic;
+					};
+					E14837E31E91865300E26251 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = EN5JPBLS84;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E14837CA1E91865300E26251;
+					};
+					E14837EE1E91865300E26251 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = EN5JPBLS84;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E14837CA1E91865300E26251;
+					};
+				};
+			};
+			buildConfigurationList = E14837C61E91865200E26251 /* Build configuration list for PBXProject "IG PicCollector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E14837C21E91865200E26251;
+			productRefGroup = E14837CC1E91865300E26251 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E14837CA1E91865300E26251 /* IG PicCollector */,
+				E14837E31E91865300E26251 /* IG PicCollectorTests */,
+				E14837EE1E91865300E26251 /* IG PicCollectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E14837C91E91865300E26251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14837DE1E91865300E26251 /* LaunchScreen.storyboard in Resources */,
+				E14838B81E91880800E26251 /* Assets.xcassets in Resources */,
+				E14837D91E91865300E26251 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14837E21E91865300E26251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14837ED1E91865300E26251 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C5AEF007E4DB49684E551CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IG PicCollectorTests/Pods-IG PicCollectorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37FB332CAA88612E6EA88A54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IG PicCollectorTests/Pods-IG PicCollectorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7526A868366ECBED653E44C6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IG PicCollector/Pods-IG PicCollector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7AD5968447DC836133D95119 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IG PicCollector/Pods-IG PicCollector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96A7FFCD9182762AA507D250 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9843645DC96419FA8BE3A7FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9B1FDEC6676935CAE31D567B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IG PicCollectorUITests/Pods-IG PicCollectorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F8DBBF5AA86E460E611793D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A45BD610A19AC124AD77582A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IG PicCollectorUITests/Pods-IG PicCollectorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E14837C71E91865300E26251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14838B61E91875700E26251 /* AppDelegate.m in Sources */,
+				E14838961E91870D00E26251 /* CompletedViewController.m in Sources */,
+				E14838B11E91873200E26251 /* XHSegmentControl.m in Sources */,
+				E148389E1E91871300E26251 /* Config.m in Sources */,
+				E14838941E91870D00E26251 /* SegmentViewController.m in Sources */,
+				E14838B31E91873200E26251 /* XHSegmentViewController.m in Sources */,
+				E148389D1E91871300E26251 /* MBProgressHUD+Add.m in Sources */,
+				E14838B21E91873200E26251 /* XHSegmentItem.m in Sources */,
+				E14838951E91870D00E26251 /* UntreatedViewController.m in Sources */,
+				E148389F1E91871300E26251 /* Util.m in Sources */,
+				E14837D01E91865300E26251 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14837E01E91865300E26251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14837E91E91865300E26251 /* IG_PicCollectorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E14837EB1E91865300E26251 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E14837F41E91865300E26251 /* IG_PicCollectorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E14837E61E91865300E26251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E14837CA1E91865300E26251 /* IG PicCollector */;
+			targetProxy = E14837E51E91865300E26251 /* PBXContainerItemProxy */;
+		};
+		E14837F11E91865300E26251 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E14837CA1E91865300E26251 /* IG PicCollector */;
+			targetProxy = E14837F01E91865300E26251 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E14837D71E91865300E26251 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E14837D81E91865300E26251 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E14837DC1E91865300E26251 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E14837DD1E91865300E26251 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E14837F61E91865300E26251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E14837F71E91865300E26251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E14837F91E91865300E26251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7069277C602E0E1C0878BD9 /* Pods-IG PicCollector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EN5JPBLS84;
+				INFOPLIST_FILE = "IG PicCollector/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LXC.IG-PicCollector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E14837FA1E91865300E26251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E4E255E30171ACFE73B95B5 /* Pods-IG PicCollector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EN5JPBLS84;
+				INFOPLIST_FILE = "IG PicCollector/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LXC.IG-PicCollector";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E14837FC1E91865300E26251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C33C5F55B1FEA66DB91214 /* Pods-IG PicCollectorTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EN5JPBLS84;
+				INFOPLIST_FILE = "IG PicCollectorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LXC.IG-PicCollectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IG PicCollector.app/IG PicCollector";
+			};
+			name = Debug;
+		};
+		E14837FD1E91865300E26251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C951369EE2AC858D6301CAC /* Pods-IG PicCollectorTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = EN5JPBLS84;
+				INFOPLIST_FILE = "IG PicCollectorTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LXC.IG-PicCollectorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IG PicCollector.app/IG PicCollector";
+			};
+			name = Release;
+		};
+		E14837FF1E91865300E26251 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B14215E1E701807C19A7FC6E /* Pods-IG PicCollectorUITests.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EN5JPBLS84;
+				INFOPLIST_FILE = "IG PicCollectorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LXC.IG-PicCollectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "IG PicCollector";
+			};
+			name = Debug;
+		};
+		E14838001E91865300E26251 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A348AD464A6FC97D18867048 /* Pods-IG PicCollectorUITests.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = EN5JPBLS84;
+				INFOPLIST_FILE = "IG PicCollectorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "LXC.IG-PicCollectorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "IG PicCollector";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E14837C61E91865200E26251 /* Build configuration list for PBXProject "IG PicCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14837F61E91865300E26251 /* Debug */,
+				E14837F71E91865300E26251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14837F81E91865300E26251 /* Build configuration list for PBXNativeTarget "IG PicCollector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14837F91E91865300E26251 /* Debug */,
+				E14837FA1E91865300E26251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14837FB1E91865300E26251 /* Build configuration list for PBXNativeTarget "IG PicCollectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14837FC1E91865300E26251 /* Debug */,
+				E14837FD1E91865300E26251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14837FE1E91865300E26251 /* Build configuration list for PBXNativeTarget "IG PicCollectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E14837FF1E91865300E26251 /* Debug */,
+				E14838001E91865300E26251 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E14837C31E91865200E26251 /* Project object */;
+}
