@@ -128,7 +128,7 @@
                     [UIView commitAnimations];
                     
                     UIImageWriteToSavedPhotosAlbum([UIImage imageWithData:picData], nil, nil, nil);
-
+                    
                     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
                     [Util mpdText:@"Success" showView:hud];
                 }
@@ -138,9 +138,9 @@
 }
 
 -(void)processUrl:(NSString *)url withCompletionBlock:(void (^)(NSData *, NSError *))completionBlock{
-
+    
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
-
+    
     [[[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         
         if (error || !data){
@@ -152,19 +152,11 @@
         }
         
         NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        DLog(@"HTML  -------- > %@",html);
-        NSScanner *scanner = [NSScanner scannerWithString:html];
-        NSString *token = nil;
         
-        NSString *ignoreString = @"<meta property=\"og:image\" content=\"";
-        [scanner scanUpToString:ignoreString intoString:nil];
+        NSString *ruleForImg = @"<meta property=\"og:image\" content=\"";
+        NSString *imageUrl = [self scanHtml:html rule:ruleForImg];
         
-        [scanner scanUpToString:@"\" />" intoString:&token];
-        
-        NSString *imageUrl = [token stringByReplacingOccurrencesOfString:ignoreString withString:@""];
-        imageUrl = [imageUrl stringByReplacingOccurrencesOfString:@" " withString:@""];
-        imageUrl = [imageUrl stringByReplacingOccurrencesOfString:@"\n" withString:@""];
-        
+        NSLog(@"content: %@",[self string:html subStringFrom:@"\"caption\": \"" to:@"\", \"comments\""]);
         NSLog(@"imageUrl: %@",imageUrl);
         
         if (!imageUrl){
@@ -189,12 +181,36 @@
     }] resume];
 }
 
-
+- (NSString *)scanHtml:(NSString *)html rule :(NSString *)rule{
+    
+    NSScanner *scanner = [NSScanner scannerWithString:html];
+    NSString *content = nil;
+    
+    NSString *ignoreString = rule;
+    [scanner scanUpToString:ignoreString intoString:nil];
+    [scanner scanUpToString:@"\" />" intoString:&content];
+    
+    NSString *contentDes = [content stringByReplacingOccurrencesOfString:ignoreString withString:@""];
+    contentDes = [contentDes stringByReplacingOccurrencesOfString:@" " withString:@""];
+    contentDes = [contentDes stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    
+    return contentDes;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (NSString *)string:(NSString *)str subStringFrom:(NSString *)startString to:(NSString *)endString{
+    
+    NSRange startRange = [str rangeOfString:startString];
+    NSRange endRange = [str rangeOfString:endString];
+    NSRange range = NSMakeRange(startRange.location + startRange.length, endRange.location - startRange.location - startRange.length);
+    return [str substringWithRange:range];
+}
+
 
 /*
  #pragma mark - Navigation
