@@ -16,7 +16,6 @@
 
 @property (nonatomic,weak)UIImageView *urlImgView;
 
-
 @end
 
 @implementation UntreatedViewController
@@ -153,6 +152,7 @@
         }
         
         NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        DLog(@"HTML  -------- > %@",html);
         NSScanner *scanner = [NSScanner scannerWithString:html];
         NSString *token = nil;
         

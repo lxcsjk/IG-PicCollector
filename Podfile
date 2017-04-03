@@ -9,6 +9,13 @@ target 'IG PicCollector' do
     
     #   提示框
     pod 'MBProgressHUD', '~> 1.0.0'
+    
+    #   刷新
+    pod 'MJRefresh'
+    
+    #  数据库
+    pod 'FMDB'
+    
   # Pods for IG PicCollector
 
   target 'IG PicCollectorTests' do

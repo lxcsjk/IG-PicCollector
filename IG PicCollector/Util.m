@@ -81,7 +81,7 @@
 + (NSString *)getDownPathUrl{
     NSString *str = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     
-    NSString *downloadDir = [str stringByAppendingPathComponent:@"DownloadCourse"];
+    NSString *downloadDir = [str stringByAppendingPathComponent:@"completedPic"];
     
     return downloadDir;
 }

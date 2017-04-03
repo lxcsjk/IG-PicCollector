@@ -24,6 +24,7 @@
 #import "Masonry.h"
 #import "MBProgressHUD+Add.h"
 #import "Util.h"
+#import "FMDB.h"
 
 #define NUMBERS @"0123456789"
 

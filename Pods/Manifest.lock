@@ -1,15 +1,23 @@
 PODS:
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
 
 DEPENDENCIES:
+  - FMDB
   - Masonry
   - MBProgressHUD (~> 1.0.0)
+  - MJRefresh
 
 SPEC CHECKSUMS:
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
 
-PODFILE CHECKSUM: 313d3066bf5fd0c6d97f16d5dc4b864725058794
+PODFILE CHECKSUM: 094b244caf3834c96673ad40fbd14a6d4431b5fd
 
 COCOAPODS: 1.1.1

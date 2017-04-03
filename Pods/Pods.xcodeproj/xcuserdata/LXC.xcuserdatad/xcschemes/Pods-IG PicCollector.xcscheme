@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '89CA09DF0EF037E538B1807D5C68B085'
+               BlueprintIdentifier = 'D4892ED8B15AC622C3363507D3D64187'
                BlueprintName = 'Pods-IG PicCollector'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'libPods-IG PicCollector.a'>
