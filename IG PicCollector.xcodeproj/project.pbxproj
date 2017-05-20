@@ -328,7 +328,7 @@
 				TargetAttributes = {
 					E14837CA1E91865300E26251 = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = EN5JPBLS84;
+						DevelopmentTeam = 4ZJC639K6U;
 						ProvisioningStyle = Automatic;
 					};
 					E14837E31E91865300E26251 = {
@@ -695,7 +695,7 @@
 			baseConfigurationReference = C7069277C602E0E1C0878BD9 /* Pods-IG PicCollector.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EN5JPBLS84;
+				DEVELOPMENT_TEAM = 4ZJC639K6U;
 				INFOPLIST_FILE = "IG PicCollector/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -710,7 +710,7 @@
 			baseConfigurationReference = 3E4E255E30171ACFE73B95B5 /* Pods-IG PicCollector.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = EN5JPBLS84;
+				DEVELOPMENT_TEAM = 4ZJC639K6U;
 				INFOPLIST_FILE = "IG PicCollector/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

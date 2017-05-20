@@ -16,6 +16,10 @@
 
 @property (nonatomic,weak)UIImageView *urlImgView;
 
+@property (nonatomic,weak)UILabel *contentLabel;
+
+@property (nonatomic,strong)NSString *publishContent;
+
 @end
 
 @implementation UntreatedViewController
@@ -65,6 +69,23 @@
         make.height.mas_equalTo(300*RATES);
     }];
     
+    UILabel *contentLabel = [[UILabel alloc]init];
+    contentLabel.font = [UIFont systemFontOfSize:16];
+    contentLabel.textColor = [UIColor blackColor];
+    contentLabel.backgroundColor = [UIColor whiteColor];
+    contentLabel.font = [UIFont systemFontOfSize:15];
+    contentLabel.numberOfLines = 5;
+    contentLabel.userInteractionEnabled = NO;
+    _contentLabel = contentLabel;
+    
+    [self.view addSubview:_contentLabel];
+    [_contentLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(_urlImgView.mas_bottom).offset(20);
+        make.left.mas_equalTo(ws.view).offset(18);
+        make.right.mas_equalTo(ws.view).offset(-18);
+        make.height.mas_equalTo(80*RATES);
+    }];
+
     UIButton *pasteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [pasteBtn setTitle:@"Paste" forState:UIControlStateNormal];
     UIImage *buttonImage = [[UIImage imageNamed:@"blueButton"]
@@ -156,8 +177,15 @@
         NSString *ruleForImg = @"<meta property=\"og:image\" content=\"";
         NSString *imageUrl = [self scanHtml:html rule:ruleForImg];
         
-        NSLog(@"content: %@",[self string:html subStringFrom:@"\"caption\": \"" to:@"\", \"comments\""]);
-        NSLog(@"imageUrl: %@",imageUrl);
+        NSString *publishContent = [self string:html subStringFrom:@"{\"edges\": [{\"node\": {\"text\": \"" to:@"\"}}]}"];
+        
+        
+        DLog(@"content: %@",publishContent);
+        DLog(@"imageUrl: %@",imageUrl);
+        
+        dispatch_async(dispatch_get_main_queue(), ^(void) {
+            _contentLabel.text = publishContent;
+        });
         
         if (!imageUrl){
             NSError *error = [NSError errorWithDomain:@"DownloadFailed"
@@ -197,18 +225,17 @@
     return contentDes;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 - (NSString *)string:(NSString *)str subStringFrom:(NSString *)startString to:(NSString *)endString{
     
     NSRange startRange = [str rangeOfString:startString];
     NSRange endRange = [str rangeOfString:endString];
     NSRange range = NSMakeRange(startRange.location + startRange.length, endRange.location - startRange.location - startRange.length);
     return [str substringWithRange:range];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 
