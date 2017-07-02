@@ -85,7 +85,7 @@
         make.right.mas_equalTo(ws.view).offset(-18);
         make.height.mas_equalTo(80*RATES);
     }];
-
+    
     UIButton *pasteBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [pasteBtn setTitle:@"Paste" forState:UIControlStateNormal];
     UIImage *buttonImage = [[UIImage imageNamed:@"blueButton"]
@@ -177,8 +177,11 @@
         NSString *ruleForImg = @"<meta property=\"og:image\" content=\"";
         NSString *imageUrl = [self scanHtml:html rule:ruleForImg];
         
-        NSString *publishContent = [self string:html subStringFrom:@"{\"edges\": [{\"node\": {\"text\": \"" to:@"\"}}]}"];
+        NSString *tempStr = [self string:html subStringFrom:@"{\"edges\": [{\"node\": {\"text\": \"" to:@"\"}}]}"];
         
+        const char *jsonString = [tempStr UTF8String];
+        NSString *publishContent = [[NSString alloc] initWithData:[NSData dataWithBytes:jsonString length:strlen(jsonString)]
+                                                         encoding:NSNonLossyASCIIStringEncoding];
         
         DLog(@"content: %@",publishContent);
         DLog(@"imageUrl: %@",imageUrl);
