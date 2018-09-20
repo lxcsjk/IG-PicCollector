@@ -66,7 +66,7 @@
         make.top.equalTo(_urlField.mas_bottom).offset(60);
         make.left.mas_equalTo(ws.view).offset(18);
         make.right.mas_equalTo(ws.view).offset(-18);
-        make.height.mas_equalTo(300*RATES);
+        make.height.mas_equalTo(SCREENWIDTH - 36);
     }];
     
     UILabel *contentLabel = [[UILabel alloc]init];
