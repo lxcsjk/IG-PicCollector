@@ -101,5 +101,4 @@
     NSString *timestampStr = [NSString stringWithFormat:@"%ld",nowTimestamp];
     return timestampStr;
 }
-
 @end

@@ -177,7 +177,9 @@
         NSString *ruleForImg = @"<meta property=\"og:image\" content=\"";
         NSString *imageUrl = [self scanHtml:html rule:ruleForImg];
         
-        NSString *tempStr = [self string:html subStringFrom:@"{\"edges\": [{\"node\": {\"text\": \"" to:@"\"}}]}"];
+        NSString *ruleForTitle = @"<meta property=\"og:title\" content=\"";
+
+        NSString *tempStr = [self scanHtml:html rule:ruleForTitle];;
         
         const char *jsonString = [tempStr UTF8String];
         NSString *publishContent = [[NSString alloc] initWithData:[NSData dataWithBytes:jsonString length:strlen(jsonString)]
